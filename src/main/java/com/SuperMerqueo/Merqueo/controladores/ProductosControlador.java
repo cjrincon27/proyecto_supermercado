@@ -1,13 +1,16 @@
 package com.SuperMerqueo.Merqueo.controladores;
 
+import com.SuperMerqueo.Merqueo.modelos.Carrito;
 import com.SuperMerqueo.Merqueo.modelos.Producto;
 import com.SuperMerqueo.Merqueo.DTO.ProductoDTO;
+import com.SuperMerqueo.Merqueo.repositorios.CarritoRepositorio;
 import com.SuperMerqueo.Merqueo.repositorios.ProductoRepositorio;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -17,6 +20,9 @@ public class ProductosControlador {
 
     @Autowired
     ProductoRepositorio productoRepositorio;
+
+    @Autowired
+    CarritoRepositorio carritoRepositorio;
 
     @GetMapping("/productos")
     public List<ProductoDTO> obtenerClientes() {
@@ -63,6 +69,19 @@ public class ProductosControlador {
     public List<ProductoDTO> obtenerPorSeccion (@RequestParam String nombreSeccion) {
 
         return productoRepositorio.findAll().stream().filter(element -> element.getSeccion().toLowerCase().contains(nombreSeccion.toLowerCase())).map(ProductoDTO::new).collect(Collectors.toList());
+
+    }
+
+    @PatchMapping("/compra/{id}")
+    public ResponseEntity<Object> compraProducto(@PathVariable Long id, @RequestParam int cantidad) {
+        Producto productos = productoRepositorio.findById(id).orElse(null);
+        productos.setStock(productos.getStock() - cantidad);
+        productoRepositorio.save(productos);
+
+           Carrito carrito = new Carrito(productos.getNombre(), cantidad, productos.getPrecio(), productos.getMedida());
+            carritoRepositorio.save(carrito);
+
+        return new ResponseEntity<>("agregado a carrito con exito", HttpStatus.CREATED);
 
     }
 }

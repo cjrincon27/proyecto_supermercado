@@ -12,6 +12,9 @@ public class Producto {
     @GenericGenerator(name = "native", strategy = "native")
     private long id;
 
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "carrito_id")
+    private Carrito carrito;
 
     private String nombre;
 
