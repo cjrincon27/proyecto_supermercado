@@ -1,12 +1,9 @@
 package com.SuperMerqueo.Merqueo.DTO;
 
-import com.SuperMerqueo.Merqueo.modelos.Productos;
-
-import javax.persistence.Entity;
-import java.time.LocalDate;
+import com.SuperMerqueo.Merqueo.modelos.Producto;
 
 
-public class ProductosDTO {
+public class ProductoDTO {
 
     private long id;
 
@@ -29,25 +26,25 @@ public class ProductosDTO {
 
 
 
-    public ProductosDTO(Productos productos) {
+    public ProductoDTO(Producto producto) {
 
-        this.id = productos.getId();
+        this.id = producto.getId();
 
-        this.nombre = productos.getNombre();
+        this.nombre = producto.getNombre();
 
-        this.descripcion = productos.getDescripcion();
+        this.descripcion = producto.getDescripcion();
 
-        this.precio = productos.getPrecio();
+        this.precio = producto.getPrecio();
 
-        this.stock = productos.getStock();
+        this.stock = producto.getStock();
 
-        this.urlImg = productos.getUrlImg();
+        this.urlImg = producto.getUrlImg();
 
-        this.medida = productos.getMedida();
+        this.medida = producto.getMedida();
 
-        this.departamento = productos.getDepartamento();
+        this.departamento = producto.getDepartamento();
 
-        this.seccion = productos.getSeccion();
+        this.seccion = producto.getSeccion();
 
 
     }

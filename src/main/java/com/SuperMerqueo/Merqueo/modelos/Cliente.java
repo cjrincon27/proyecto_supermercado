@@ -2,10 +2,7 @@ package com.SuperMerqueo.Merqueo.modelos;
 
 import org.hibernate.annotations.GenericGenerator;
 
-
 import javax.persistence.*;
-import java.util.HashSet;
-import java.util.Set;
 
 @Entity
 public class Cliente {
@@ -14,6 +11,7 @@ public class Cliente {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @GenericGenerator(name = "native", strategy = "native")
     private long id;
+
 
     private String primerNombre;
     private String apellido;
@@ -67,3 +65,4 @@ public class Cliente {
         this.contraseña = contraseña;
     }
 }
+

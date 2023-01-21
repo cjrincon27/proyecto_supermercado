@@ -3,10 +3,9 @@ package com.SuperMerqueo.Merqueo.modelos;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
-import java.time.LocalDate;
 
 @Entity
-public class Productos {
+public class Producto {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -31,11 +30,11 @@ public class Productos {
     private String seccion;
 
 
-    public Productos(){
+    public Producto(){
 
     }
 
-    public Productos(String nombre, String descripcion, double precio, int stock, String urlImg, double medida, String departamento, String seccion) {
+    public Producto(String nombre, String descripcion, double precio, int stock, String urlImg, double medida, String departamento, String seccion) {
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.precio = precio;
