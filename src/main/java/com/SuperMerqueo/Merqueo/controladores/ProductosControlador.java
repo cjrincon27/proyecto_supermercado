@@ -1,5 +1,6 @@
 package com.SuperMerqueo.Merqueo.controladores;
 
+import com.SuperMerqueo.Merqueo.DTO.CarritoDTO;
 import com.SuperMerqueo.Merqueo.modelos.Carrito;
 import com.SuperMerqueo.Merqueo.modelos.Producto;
 import com.SuperMerqueo.Merqueo.DTO.ProductoDTO;
@@ -78,7 +79,7 @@ public class ProductosControlador {
         productos.setStock(productos.getStock() - cantidad);
         productoRepositorio.save(productos);
 
-           Carrito carrito = new Carrito(productos.getNombre(), cantidad, productos.getPrecio(), productos.getMedida());
+            Carrito carrito = new Carrito(productos.getNombre(), cantidad, productos.getPrecio(), productos.getMedida());
             carritoRepositorio.save(carrito);
 
         return new ResponseEntity<>("agregado a carrito con exito", HttpStatus.CREATED);
