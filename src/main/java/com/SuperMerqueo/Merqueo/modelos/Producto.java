@@ -118,6 +118,11 @@ public class Producto {
         this.seccion = seccion;
     }
 
+    public Carrito getCarrito() {
+        return carrito;
+    }
 
-
+    public void setCarrito(Carrito carrito) {
+        this.carrito = carrito;
+    }
 }

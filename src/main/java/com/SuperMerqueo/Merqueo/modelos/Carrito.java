@@ -2,13 +2,11 @@ package com.SuperMerqueo.Merqueo.modelos;
 
 import org.hibernate.annotations.GenericGenerator;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
+@Entity
 public class Carrito {
 
     @Id
@@ -92,4 +90,6 @@ public class Carrito {
     public void setMedida(double medida) {
         this.medida = medida;
     }
+
+
 }
