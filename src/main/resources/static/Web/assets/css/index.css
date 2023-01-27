@@ -211,17 +211,8 @@ aside{
     height: 85.2vh !important;
 }
 
-main{
-    margin-left: 16rem !important;
-    margin-top: 2rem;
+
    
-    height: 78vh;
-    flex-grow: 1;
-    overflow-y: auto;
-    -ms-scroll-chaining: none;
-    overscroll-behavior: contain;
-    background-color: #fff;
-}
 
 
 
