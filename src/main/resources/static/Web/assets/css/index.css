@@ -8,7 +8,7 @@
 }
 
 :root {
-    --principalcolor:#d20170;
+    --principalcolor:#d93b23;
     --secondcolor:rgb(255, 255, 255);
   }
 #headerprincipal{
@@ -48,7 +48,7 @@
 }
 .second_nav{
     padding:1rem ;
-    background-color: #9b0854;
+    background-color: #fbb61d;
     height: 2.6rem;
     width: 100%;
     color: var(--secondcolor);
@@ -210,11 +210,14 @@ aside{
     background-color: #333;
     height: 85.2vh !important;
 }
-
-
-   
-
-
+main{
+    margin-left: 16rem !important;
+    margin-top: 2rem;
+    height: 78vh;
+    flex-grow: 1;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+}
 
 .mq-product-hall[data-v-370856f0] {
     display: flex;
@@ -342,14 +345,15 @@ aside{
     width: 202px !important;
 }
 .carboton{
-    background: #0071ed;
+    background:  #fbb61d;
     color: #fff;
     margin: auto;
     width: 180px;
     font-weight: 700;
-    background: #0071ed;
+   
     color: #fff;
-    border: 1px solid #0071ed;
+    border: 1px solid  #fbb61d;
     font-weight: 600!important;
     border-radius: 20px;
 }
+
