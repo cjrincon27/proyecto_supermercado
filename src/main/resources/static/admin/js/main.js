@@ -36,14 +36,14 @@ const app = Vue.createApp({
         agregarProducto(){
             
             axios
-            .post("/productos", {
+            .post("/api/productos", {
                 nombre: this.nombre,
                 descripcion: this.descripcion,
                 precio: this.precio,
                 stock: this.stock,
-                imagen: this.urlImg,
+                urlImg: this.imagen,
                 medida:this.medida,
-                despartamento: this.despartamento,
+                departamento: this.despartamento,
                 seccion: this.seccion,
     
             })
