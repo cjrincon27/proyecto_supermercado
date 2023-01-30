@@ -64,8 +64,6 @@ public class MerqueoApplication {
 			productoRepositorio.save(producto6);
 			productoRepositorio.save(producto7);
 			productoRepositorio.save(producto8);
-			productoRepositorio.save(producto8);
-			productoRepositorio.save(producto8);
 			productoRepositorio.save(producto9);
 			productoRepositorio.save(producto10);
 
