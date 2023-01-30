@@ -33,12 +33,12 @@ public class ProductosControlador {
     }
 
     @PostMapping("/productos")
-    public ResponseEntity<Object> agregarProducto (@RequestParam String nombre, @RequestParam String descripcion, @RequestParam double precio, @RequestParam int stock, @RequestParam String urlImg, @RequestParam double medida, @RequestParam String departamento, @RequestParam String seccion) {
+    public ResponseEntity<Object> agregarProducto (@RequestBody Producto producto) {
 
-        Producto producto = new Producto(nombre,descripcion,precio,stock,urlImg,medida,departamento,seccion);
-        productoRepositorio.save(producto);
+        Producto productoAguardar = new Producto(producto.getNombre(), producto.getDescripcion(), producto.getPrecio(), producto.getStock(), producto.getUrlImg(), producto.getMedida(), producto.getDepartamento(), producto.getSeccion());
+        productoRepositorio.save(productoAguardar);
 
-        return new ResponseEntity<>("'" + nombre + "'" + " fué agregado con éxito!", HttpStatus.CREATED);
+        return new ResponseEntity<>("'" + producto.getNombre() + "'" + " fué agregado con éxito!", HttpStatus.CREATED);
 
     }
 

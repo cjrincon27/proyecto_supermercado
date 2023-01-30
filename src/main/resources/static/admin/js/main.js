@@ -9,9 +9,9 @@ const app = Vue.createApp({
             productos:[],
             nombre:"",
             descripcion: "",
-            precio: null,
-            medida:null,
-            stock: null,
+            precio: "",
+            medida:"",
+            stock: "",
             imagen: "",
             despartamento:"",
             seccion:"",
@@ -34,22 +34,27 @@ const app = Vue.createApp({
     },
     methods: {
         agregarProducto(){
-            axios.post('/api/productos', {
-                nombre: 'nombre',
-                descripcion: 'descripcion',
-                precio: 12.34,
-                stock: 10,
-                urlImg: 'urlImg',
-                medida: 5.6,
-                departamento: 'departamento',
-                seccion: 'seccion'
-                })
-                .then(function (response) {
-                console.log(response);
-                })
-                .catch(function (error) {
+            
+            axios
+            .post("/api/productos", {
+                nombre: this.nombre,
+                descripcion: this.descripcion,
+                precio: this.precio,
+                stock: this.stock,
+                urlImg: this.imagen,
+                medida:this.medida,
+                departamento: this.despartamento,
+                seccion: this.seccion
+    
+            })
+            .then(response => console.log("agregado")
+            )
+            .catch(error => {
                 console.log(error);
-                });
+            }
+            );
+            
+        
         }
     }
 }).mount("#app");

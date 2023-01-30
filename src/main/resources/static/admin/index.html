@@ -132,7 +132,76 @@
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
-                                       
+                                        <div class="modal-body">
+                                            
+                                                <h1>Client Manager</h1>
+                                                <form >
+                                                    <div class="mb-3">
+                                                        <div class="mb-3">
+                                                            <label for="exampleInputPassword"
+                                                                class="form-label">Nombre:</label>
+                                                            <input v-model="nombre" type="text" class="form-control"
+                                                                id="exampleInputPassword" placeholder="nombre">
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="exampleInputPassword1"
+                                                                class="form-label">Descripción:</label>
+                                                            <input v-model="descripcion" type="text"
+                                                                class="form-control" id="exampleInputPassword1"
+                                                                placeholder="descripcion">
+
+                                                        </div>
+                                                        <div>
+                                                            <label for="exampleInputEmail1"
+                                                                class="form-label">Precio:</label>
+                                                            <input v-model="precio" type="text" class="form-control"
+                                                                id="exampleInputEmail1" aria-describedby="precio"
+                                                                placeholder="precio">
+                                                        </div>
+                                                        <div>
+                                                            <label for="exampleInputEmail"
+                                                                class="form-label">Stock:</label>
+                                                            <input v-model="stock" type="text" class="form-control"
+                                                                id="exampleInputEmail" aria-describedby="stock"
+                                                                placeholder="stock">
+                                                        </div>
+                                                        <div>
+                                                            <label for="exampleInputEmail2"
+                                                                class="form-label">Imagen:</label>
+                                                            <input v-model="imagen" type="text" class="form-control"
+                                                                id="exampleInputEmail2" aria-describedby="imagen"
+                                                                placeholder="imagen">
+                                                        </div>
+                                                        <div>
+                                                            <label for="exampleInputEmail3"
+                                                                class="form-label">Medida:</label>
+                                                            <input v-model="medida" type="text" class="form-control"
+                                                                id="exampleInputEmail3" aria-describedby="medida"
+                                                                placeholder="medida">
+                                                        </div>
+                                                        <div>
+                                                            <label for="exampleInputEmail4"
+                                                                class="form-label">Departamento:</label>
+                                                            <input v-model="despartamento" type="text" class="form-control"
+                                                                id="exampleInputEmail4" aria-describedby="departamento"
+                                                                placeholder="departamento">
+                                                        </div>
+                                                        <div>
+                                                            <label for="exampleInputEmail5"
+                                                                class="form-label">Seccion:</label>
+                                                            <input v-model="seccion" type="text" class="form-control"
+                                                                id="exampleInputEmail5" aria-describedby="seccion"
+                                                                placeholder="seccion">
+
+
+                                                    </div>
+                                                    <button @click="agregarProducto" type="submit"
+                                                        class="btn btn-primary">Añadir Cliente</button>
+                                                    <!-- <button @click="postClient" type="submit" class="btn btn-primary">Cargar Cliente</button> -->
+                                                    <button class="btn btn-primary ml-5">Borrar</button>
+                                                </form>
+
+                                        </div>
 
                                     </div>
                                 </div>
@@ -173,76 +242,6 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="modal-body">
-                                            
-                        <h1>Client Manager</h1>
-                        <form >
-                            <div class="mb-3">
-                                <div class="mb-3">
-                                    <label for="exampleInputPassword"
-                                        class="form-label">Nombre:</label>
-                                    <input v-model="nombre" type="text" class="form-control"
-                                        id="exampleInputPassword" placeholder="nombre">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleInputPassword1"
-                                        class="form-label">Descripción:</label>
-                                    <input v-model="descripcion" type="text"
-                                        class="form-control" id="exampleInputPassword1"
-                                        placeholder="descripcion">
-
-                                </div>
-                                <div>
-                                    <label for="exampleInputEmail1"
-                                        class="form-label">Precio:</label>
-                                    <input v-model="precio" type="number" class="form-control"
-                                        id="exampleInputEmail1" aria-describedby="precio"
-                                        placeholder="precio">
-                                </div>
-                                <div>
-                                    <label for="exampleInputEmail"
-                                        class="form-label">Stock:</label>
-                                    <input v-model="stock" type="number" class="form-control"
-                                        id="exampleInputEmail" aria-describedby="stock"
-                                        placeholder="stock">
-                                </div>
-                                <div>
-                                    <label for="exampleInputEmail2"
-                                        class="form-label">Imagen:</label>
-                                    <input v-model="imagen" type="text" class="form-control"
-                                        id="exampleInputEmail2" aria-describedby="imagen"
-                                        placeholder="imagen">
-                                </div>
-                                <div>
-                                    <label for="exampleInputEmail3"
-                                        class="form-label">Medida:</label>
-                                    <input v-model="medida" type="number" class="form-control"
-                                        id="exampleInputEmail3" aria-describedby="medida"
-                                        placeholder="medida">
-                                </div>
-                                <div>
-                                    <label for="exampleInputEmail4"
-                                        class="form-label">Departamento:</label>
-                                    <input v-model="despartamento" type="text" class="form-control"
-                                        id="exampleInputEmail4" aria-describedby="departamento"
-                                        placeholder="departamento">
-                                </div>
-                                <div>
-                                    <label for="exampleInputEmail5"
-                                        class="form-label">Seccion:</label>
-                                    <input v-model="seccion" type="text" class="form-control"
-                                        id="exampleInputEmail5" aria-describedby="seccion"
-                                        placeholder="seccion">
-
-
-                            </div>
-                            <a @click="agregarProducto" type=""
-                                class="btn btn-primary">Añadir ------Cliente</a>
-                            <!-- <button @click="postClient" type="submit" class="btn btn-primary">Cargar Cliente</button> -->
-                            <!-- <button class="btn btn-primary ml-5">Borrar</button> -->
-                        </form>
-
-                </div>
                 </div>
             </div>
             <!-- Recent Sales End -->
@@ -285,12 +284,11 @@
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script> -->
 
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-
+    <script src="https://unpkg.com/vue@3"></script>
 
     <!-- Template Javascript -->
     <script src="./js/main.js"></script>
