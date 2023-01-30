@@ -35,7 +35,7 @@ public class ProductosControlador {
     @PostMapping("/productos")
     public ResponseEntity<Object> agregarProducto (@RequestParam String nombre, @RequestParam String descripcion, @RequestParam double precio, @RequestParam int stock, @RequestParam String urlImg, @RequestParam double medida, @RequestParam String departamento, @RequestParam String seccion) {
 
-        Producto producto = new Producto(nombre, descripcion, precio, stock, urlImg, medida, departamento, seccion);
+        Producto producto = new Producto(nombre,descripcion,precio,stock,urlImg,medida,departamento,seccion);
         productoRepositorio.save(producto);
 
         return new ResponseEntity<>("'" + nombre + "'" + " fué agregado con éxito!", HttpStatus.CREATED);
