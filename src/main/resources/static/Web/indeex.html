@@ -140,12 +140,12 @@
                   <div class="d-flex">
                    
                     <p class="precio mt-4">
-                      {{producto.precio}}
+                      {{new Intl.NumberFormat('in-EU', { style: 'currency', currency:'COP'}).format(producto.precio)}}
                     </p>
                   </div>
                   <div>
                     <p class="preciog m-0">
-                      Gramo ({{producto.precio}}/{{producto.medida}})
+                      Gramo a  $ ({{producto.precio/producto.medida}})
                     </p>
                   </div>
                 </div>
