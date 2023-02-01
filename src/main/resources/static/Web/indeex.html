@@ -526,14 +526,14 @@
       <div class="contenedorcards mt-2 d-flex align-items-center flex-wrap p-2">
         <!-- -----card------------- -->
         <div v-for="producto in productos">
-          <div v-show="producto.departamento === departamento " class="cardproduct m-lg-2">
+          <div v-show="producto.departamento === departamento " class="cardproduct m-lg-1">
             <div class="contenedorimg">
               <img class="imgcard" :src="producto.urlImg " alt="" style="height: 100" style="width: 100" />
             </div>
             <div class="contenedorsubt">
               <section>
                 <div></div>
-                <p class="titulocard d-flex align-items-center justify-content-center">
+                <p class="titulocard d-flex align-items-center justify-content-center text-center">
                   {{producto.nombre}}
                 </p>
                 <p id="subtitle" class="medida text-center">
@@ -543,14 +543,12 @@
                 <div class="d-flex mb-2 flex-column justify-content-between align-items-lg-center">
                   <div class="d-flex">
                     <p class="precio mt-4">
-                      {{new Intl.NumberFormat('in-EU', { style: 'currency',
-                      currency:'COP'}).format(producto.precio)}}
+                     $ {{ new Intl.NumberFormat('en-IN', { maximumSignificantDigits: 3 }).format(producto.precio)}}
                     </p>
                   </div>
                   <div>
                     <p class="preciog m-0">
-                      Gramo a $ ({{producto.precio/producto.medida}})
-                    </p>
+                      Gramo a $  {{ new Intl.NumberFormat('en-IN', { maximumSignificantDigits: 3 }).format(producto.precio/producto.medida)}}
                   </div>
                 </div>
                 <div class="cboton d-flex justify-content-center">
