@@ -64,8 +64,9 @@ public class MerqueoApplication {
 			Producto producto18= new Producto("Harina De Maíz Blanco Doñarepa Extrafina", "", 4580, 20, "https://static.merqueo.com/images/products/large/2d654170-562f-4355-9486-b4138cf8d6cb.jpg", 1000, "Despensa", "harinas");
 			productoRepositorio.save(producto11);
 			productoRepositorio.save(producto1);
-			productoRepositorio.save(producto2);
 			productoRepositorio.save(producto3);
+			productoRepositorio.save(producto2);
+
 			productoRepositorio.save(producto4);
 			productoRepositorio.save(producto5);
 			productoRepositorio.save(producto6);
