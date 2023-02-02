@@ -55,7 +55,14 @@ const app = Vue.createApp({
             );
             
         
-        }
+        },
+        deleteproducto(Id) {
+            axios.post(this.urlPhoneDelete, "phoneId=" + Id)
+                .then(() => {
+                    this.getPhones(this.urlPhones);
+                    alert("phone deleted")
+                })
+        },
     }
 }).mount("#app");
 
