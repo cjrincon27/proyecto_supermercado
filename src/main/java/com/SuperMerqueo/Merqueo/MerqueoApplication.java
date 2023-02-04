@@ -62,20 +62,22 @@ public class MerqueoApplication {
 
 			Producto producto20= new Producto("Cereal CHOCAPIC® Bolsa", "", 12531, 20, "https://static.merqueo.com/images/products/large/805c0327-ba4b-43e2-906c-ddc7f1563115.jpg", 380, "Despensa", "cereales");
 			Producto producto18= new Producto("Harina De Maíz Blanco Doñarepa Extrafina", "", 4580, 20, "https://static.merqueo.com/images/products/large/2d654170-562f-4355-9486-b4138cf8d6cb.jpg", 1000, "Despensa", "harinas");
+
 			productoRepositorio.save(producto11);
+			productoRepositorio.save(producto13);
+			productoRepositorio.save(producto10);
+			productoRepositorio.save(producto12);
+
 			productoRepositorio.save(producto1);
 			productoRepositorio.save(producto3);
 			productoRepositorio.save(producto2);
-
 			productoRepositorio.save(producto4);
 			productoRepositorio.save(producto5);
 			productoRepositorio.save(producto6);
 			productoRepositorio.save(producto7);
 			productoRepositorio.save(producto8);
 			productoRepositorio.save(producto9);
-			productoRepositorio.save(producto10);
-			productoRepositorio.save(producto12);
-			productoRepositorio.save(producto13);
+
 			productoRepositorio.save(producto14);
 			productoRepositorio.save(producto15);
 			productoRepositorio.save(producto16);
