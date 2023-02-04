@@ -502,3 +502,11 @@ display: none !important;
 
   }
 
+  .contenedorcards{
+    overflow-x: scroll !important;
+    white-space: nowrap !important;
+  }
+  
+  .cardproduct {
+    display: inline-block !important;
+  }
