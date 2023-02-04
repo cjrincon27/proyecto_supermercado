@@ -50,7 +50,7 @@ public class MerqueoApplication {
 
 			Producto producto9= new Producto("Arveja Desgranada x Paquete", "" , 14880, 32, "./assets/img/ArvejaDesgranada.jpg", 280,"Frutas y Verduras","Desgranados");
 
-			Producto producto10= new Producto("Papa Pastusa x Bolsa 3 Kg", "" , 7040, 32, "./assets/img/PapaPastusa.png", 3,"Frutas y verduras","Papa");
+			Producto producto10= new Producto("Papa Pastusa x Bolsa 3 Kg", "" , 7040, 32, "./assets/img/PapaPastusa.png", 3,"Frutas y Verduras","Papa");
 			Producto producto12= new Producto("Chocolate de Mesa La Especial", "" , 7290, 32, "https://static.merqueo.com/images/products/large/e21b20df-c2e1-4281-9a16-b7e4a8e58a0e.jpeg", 500,"Irresistibles", "Super Ofertas");
 			Producto producto13= new Producto("Panela En Pastilla Panela Colombia", "" , 6490, 32, "https://static.merqueo.com/images/products/large/a9464b35-6784-4e06-b6b3-55d4a6ca70a7.jpg", 950,"Irresistibles", "Super Ofertas");
 			Producto producto14= new Producto("Tomate Chonto x Bolsa (4 - 5 Und Aprox)", "" , 5300, 32, "https://static.merqueo.com/images/products/large/16854c95-eb59-42e0-81d7-46e984284df7.png", 600,"Irresistibles", "Super Ofertas");
@@ -65,7 +65,7 @@ public class MerqueoApplication {
 
 			productoRepositorio.save(producto11);
 			productoRepositorio.save(producto13);
-			productoRepositorio.save(producto10);
+
 			productoRepositorio.save(producto12);
 
 			productoRepositorio.save(producto1);
@@ -77,7 +77,7 @@ public class MerqueoApplication {
 			productoRepositorio.save(producto7);
 			productoRepositorio.save(producto8);
 			productoRepositorio.save(producto9);
-
+			productoRepositorio.save(producto10);
 			productoRepositorio.save(producto14);
 			productoRepositorio.save(producto15);
 			productoRepositorio.save(producto16);
