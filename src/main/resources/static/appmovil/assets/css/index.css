@@ -449,6 +449,7 @@ display: none !important;
 
 .contenedorcards{
    height: 15rem !important; 
+ 
   
 }
 .cardproduct {
@@ -503,10 +504,12 @@ display: none !important;
   }
 
   .contenedorcards{
-    overflow-x: scroll !important;
-    white-space: nowrap !important;
+    overflow-y: hidden;
+    overflow-x: scroll;
+   
   }
   
   .cardproduct {
-    display: inline-block !important;
+    display: inline-block;
+    margin-right: 5px;
   }
