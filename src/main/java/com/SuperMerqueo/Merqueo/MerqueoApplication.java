@@ -61,7 +61,7 @@ public class MerqueoApplication {
 			Producto producto19= new Producto("Gelatina Gel'hada Surtida x4 und", "", 5031, 20, "https://static.merqueo.com/images/products/large/a369b9d3-6c74-42e3-ab22-b1d3bc153eeb.png", 140, "Despensa", "Mezclas Listas");
 
 			Producto producto20= new Producto("Cereal CHOCAPIC® Bolsa", "", 12531, 20, "https://static.merqueo.com/images/products/large/805c0327-ba4b-43e2-906c-ddc7f1563115.jpg", 380, "Despensa", "cereales");
-			Producto producto18= new Producto("Harina De Maíz Blanco Doñarepa Extrafina", "", 4580, 20, "https://static.merqueo.com/images/products/large/2d654170-562f-4355-9486-b4138cf8d6cb.jpg", 1000, "Despensa", "harinas");
+			Producto producto18= new Producto("Harina De Maíz Blanco Doñarepa ", "", 4580, 20, "https://static.merqueo.com/images/products/large/2d654170-562f-4355-9486-b4138cf8d6cb.jpg", 1000, "Despensa", "harinas");
 
 			productoRepositorio.save(producto11);
 			productoRepositorio.save(producto13);
