@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./assets/css/index.css" />
+  <title>indeex</title>
+</head>
+
+<body>
+  <header id="headerprincipal">
+    <nav class="first_nav d-flex gap-4" id="navprincipal">
+      <button id="btnlogin" class=" " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"></button>
+      
+      <div class="logo d-flex align-items-center justify-content-center">
+        <img src="https://www.icomedios.com/sites/default/files/descarga_1.png" alt="" />
+      </div>
+      <div class="name d-flex justify-content-center flex-column">
+        <h4>supermercado</h4>
+        <span>ir a otra tienda </span>
+      </div>
+
+      <div id="buscadoruno" class="container">
+        <div class="row mt-4">
+          <div class="col-md-6">
+            <div class="input-group">
+              <input class="form-control border" type="search" value="Buscar en supermercado "
+                id="example-search-input" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="crecomendados d-flex justify-content-end align-items-end">
+        <span>recomendados</span>
+      </div>
+      <div class="clogin d-flex justify-content-end align-items-end">
+        <div>inicia sesion</div>
+        <span>o</span>
+        <span>regístrate</span>
+      </div>
+     
+        <button class="ccarrito d-flex justify-content-end align-items-end" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+        <img src="https://cdn-icons-png.flaticon.com/512/6397/6397721.png" style="height: 35px;" alt="">
+      </button>
+    </nav>
+    <div id="buscadordos" class="input-group">
+      <input class="form-control border" type="search" value="Buscar en supermercado "
+        id="example-search-input" />
+    </div>
+  </header>
+  <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasScrollingLabel">login-sing up</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <p>options</p>
+    </div>
+  </div>
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">CARRITO</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      ...
+      productos
+    </div>
+  </div>
+  
+  <div class="second_nav d-flex align-items-center justify-content-end">
+    <div class="containersecond d-flex justify-content-center align-items-center gap-3">
+      <div>Bogota,Colombia</div>
+      <div>Ingresa tu dirección</div>
+    </div>
+  </div>
+  <aside id="pasillos" data-v-0fd287b0="" data-v-1141fd05="" class="mq-departments">
+    <div data-v-0fd287b0="" class="mq-departments__header">
+      <h2 data-v-0fd287b0="" class="mq-departments-title">
+        Pasillos
+        <span data-v-0fd287b0="" class="btn-icon show-on-mobile"><svg data-v-0fd287b0="" class="mq-icon blue500"
+            style="width: 24px; height: 24px">
+            <use xlink:href="#arrow-down"></use>
+          </svg></span>
+        <!---->
+      </h2>
+    </div>
+    <nav data-v-0fd287b0="" class="mq-departments-departments scrollable">
+      <!---->
+      <ul data-v-0fd287b0="" class="mq-shelfs">
+        <li data-v-9a478542="" data-v-0fd287b0="" class="mq-shelf-item">
+          <div data-v-9a478542="">
+            <a data-v-9a478542="" href="/bogota/super-ahorro/irresistibles" class="mq-shelf-link"><img
+                data-v-6128a5eb="" data-v-9a478542=""
+                src="https://d50xhnwqnrbqk.cloudfront.net/stores/images/app/408be1691b571494bb3530f08433782f.jpg"
+                class="mq-img mq-logo-country v-lazy-image v-lazy-image-loaded" alt="Flag of country" />
+              <p data-v-9a478542="" class="mq-shelf-title">
+                Irresistibles
+              </p>
+            </a>
+          </div>
+          <div data-v-9a478542="" class="mq-shelf-drop c-pointer">
+            <svg data-v-9a478542="" class="mq-icon mq-drop-icon blue500" style="width: 22px; height: 22px">
+              <use xlink:href="#arrow-down"></use>
+            </svg>
+          </div>
+          <!---->
+        </li>
+        <li data-v-9a478542="" data-v-0fd287b0="" class="mq-shelf-item">
+          <div data-v-9a478542="">
+            <a data-v-9a478542="" href="/bogota/super-ahorro/nuestras-marcas" class="mq-shelf-link"><img
+                data-v-6128a5eb="" data-v-9a478542=""
+                src="https://d50xhnwqnrbqk.cloudfront.net/stores/images/app/07d91e7aedede0dc1c4ad245da4de9ff.jpg"
+                class="mq-img mq-logo-country v-lazy-image v-lazy-image-loaded" alt="Flag of country" />
+              <p data-v-9a478542="" class="mq-shelf-title">
+                Nuestras Marcas
+              </p>
+            </a>
+          </div>
+          <div data-v-9a478542="" class="mq-shelf-drop c-pointer">
+            <svg data-v-9a478542="" class="mq-icon mq-drop-icon blue500" style="width: 22px; height: 22px">
+              <use xlink:href="#arrow-down"></use>
+            </svg>
+          </div>
+          <!---->
+        </li>
+        <li data-v-9a478542="" data-v-0fd287b0="" class="mq-shelf-item">
+          <div data-v-9a478542="">
+            <a data-v-9a478542="" href="/bogota/super-ahorro/frutas-y-verduras" class="mq-shelf-link"><img
+                data-v-6128a5eb="" data-v-9a478542=""
+                src="https://d50xhnwqnrbqk.cloudfront.net/stores/images/app/e65ecbfc9c664ac14248694642aff353.png"
+                class="mq-img mq-logo-country v-lazy-image v-lazy-image-loaded" alt="Flag of country" />
+              <p data-v-9a478542="" class="mq-shelf-title">
+                Frutas y Verduras
+              </p>
+            </a>
+          </div>
+          <div data-v-9a478542="" class="mq-shelf-drop c-pointer">
+            <svg data-v-9a478542="" class="mq-icon mq-drop-icon blue500" style="width: 22px; height: 22px">
+              <use xlink:href="#arrow-down"></use>
+            </svg>
+          </div>
+          <!---->
+        </li>
+        <li data-v-9a478542="" data-v-0fd287b0="" class="mq-shelf-item">
+          <div data-v-9a478542="">
+            <a data-v-9a478542="" href="/bogota/super-ahorro/lacteos-y-huevos" class="mq-shelf-link"><img
+                data-v-6128a5eb="" data-v-9a478542=""
+                src="https://d50xhnwqnrbqk.cloudfront.net/stores/images/app/54148b498faa86d28797c92fbfcfe70a.jpg"
+                class="mq-img mq-logo-country v-lazy-image v-lazy-image-loaded" alt="Flag of country" />
+              <p data-v-9a478542="" class="mq-shelf-title">
+                Lácteos y Huevos
+              </p>
+            </a>
+          </div>
+          <div data-v-9a478542="" class="mq-shelf-drop c-pointer">
+            <svg data-v-9a478542="" class="mq-icon mq-drop-icon blue500" style="width: 22px; height: 22px">
+              <use xlink:href="#arrow-down"></use>
+            </svg>
+          </div>
+          <!---->
+        </li>
+        <li data-v-9a478542="" data-v-0fd287b0="" class="mq-shelf-item">
+          <div data-v-9a478542="">
+            <a data-v-9a478542="" href="/bogota/super-ahorro/arroz-granos-pastas" class="mq-shelf-link"><img
+                data-v-6128a5eb="" data-v-9a478542=""
+                src="https://d50xhnwqnrbqk.cloudfront.net/stores/images/app/4e0ddba1a2285114397d505c4623b0ed.jpg"
+                class="mq-img mq-logo-country v-lazy-image v-lazy-image-loaded" alt="Flag of country" />
+              <p data-v-9a478542="" class="mq-shelf-title">
+                Arroz Granos Pastas
+              </p>
+            </a>
+          </div>
+          <div data-v-9a478542="" class="mq-shelf-drop c-pointer">
+            <svg data-v-9a478542="" class="mq-icon mq-drop-icon blue500" style="width: 22px; height: 22px">
+              <use xlink:href="#arrow-down"></use>
+            </svg>
+          </div>
+          <!---->
+        </li>
+        <li data-v-9a478542="" data-v-0fd287b0="" class="mq-shelf-item">
+          <div data-v-9a478542="">
+            <a data-v-9a478542="" href="/bogota/super-ahorro/aceites-sal-y-endulzantes" class="mq-shelf-link"><img
+                data-v-6128a5eb="" data-v-9a478542=""
+                src="https://d50xhnwqnrbqk.cloudfront.net/stores/images/app/ecadf069b59d4abb70dcd7fd049adccd.jpg"
+                class="mq-img mq-logo-country v-lazy-image v-lazy-image-loaded" alt="Flag of country" />
+              <p data-v-9a478542="" class="mq-shelf-title">
+                Aceites, Sal y Endulzantes
+              </p>
+            </a>
+          </div>
+          <div data-v-9a478542="" class="mq-shelf-drop c-pointer">
+            <svg data-v-9a478542="" class="mq-icon mq-drop-icon blue500" style="width: 22px; height: 22px">
+              <use xlink:href="#arrow-down"></use>
+            </svg>
+          </div>
+          <!---->
+        </li>
+        <li data-v-9a478542="" data-v-0fd287b0="" class="mq-shelf-item">
+          <div data-v-9a478542="">
+            <a data-v-9a478542="" href="/bogota/super-ahorro/despensa" class="mq-shelf-link"><img data-v-6128a5eb=""
+                data-v-9a478542=""
+                src="https://d50xhnwqnrbqk.cloudfront.net/stores/images/app/65faf0a7418aa4f3f44528ef4ffad0f0.png"
+                class="mq-img mq-logo-country v-lazy-image v-lazy-image-loaded" alt="Flag of country" />
+              <p data-v-9a478542="" class="mq-shelf-title">Despensa</p>
+            </a>
+          </div>
+          <div data-v-9a478542="" class="mq-shelf-drop c-pointer">
+            <svg data-v-9a478542="" class="mq-icon mq-drop-icon blue500" style="width: 22px; height: 22px">
+              <use xlink:href="#arrow-down"></use>
+            </svg>
+          </div>
+          <!---->
+        </li>
+        <li data-v-9a478542="" data-v-0fd287b0="" class="mq-shelf-item">
+          <div data-v-9a478542="">
+            <a data-v-9a478542="" href="/bogota/super-ahorro/pollo-carne-y-pescado" class="mq-shelf-link"><img
+                data-v-6128a5eb="" data-v-9a478542=""
+                src="https://d50xhnwqnrbqk.cloudfront.net/stores/images/app/5262af259e1d635c7390aa18b0189bb9.jpg"
+                class="mq-img mq-logo-country v-lazy-image v-lazy-image-loaded" alt="Flag of country" />
+              <p data-v-9a478542="" class="mq-shelf-title">
+                Pollo, Carne y Pescado
+              </p>
+            </a>
+          </div>
+          <div data-v-9a478542="" class="mq-shelf-drop c-pointer">
+            <svg data-v-9a478542="" class="mq-icon mq-drop-icon blue500" style="width: 22px; height: 22px">
+              <use xlink:href="#arrow-down"></use>
+            </svg>
+          </div>
+          <!---->
+        </li>
+        <li data-v-9a478542="" data-v-0fd287b0="" class="mq-shelf-item">
+          <div data-v-9a478542="">
+            <a data-v-9a478542="" href="/bogota/super-ahorro/carnes-frias-y-embutidos" class="mq-shelf-link"><img
+                data-v-6128a5eb="" data-v-9a478542=""
+                src="https://d50xhnwqnrbqk.cloudfront.net/stores/images/app/c4fa429d0bb1439e1b51c90f9ed96db2.jpg"
+                class="mq-img mq-logo-country v-lazy-image v-lazy-image-loaded" alt="Flag of country" />
+              <p data-v-9a478542="" class="mq-shelf-title">
+                Carnes Frías y Embutidos
+              </p>
+            </a>
+          </div>
+          <div data-v-9a478542="" class="mq-shelf-drop c-pointer">
+            <svg data-v-9a478542="" class="mq-icon mq-drop-icon blue500" style="width: 22px; height: 22px">
+              <use xlink:href="#arrow-down"></use>
+            </svg>
+          </div>
+          <!---->
+        </li>
+        <li data-v-9a478542="" data-v-0fd287b0="" class="mq-shelf-item">
+          <div data-v-9a478542="">
+            <a data-v-9a478542="" href="/bogota/super-ahorro/helados" class="mq-shelf-link"><img data-v-6128a5eb=""
+                data-v-9a478542=""
+                src="https://d50xhnwqnrbqk.cloudfront.net/stores/images/app/640e2525fc26df7dc476dafcea29051f.jpg"
+                class="mq-img mq-logo-country v-lazy-image v-lazy-image-loaded" alt="Flag of country" />
+              <p data-v-9a478542="" class="mq-shelf-title">Helados</p>
+            </a>
+          </div>
+          <div data-v-9a478542="" class="mq-shelf-drop c-pointer">
+            <svg data-v-9a478542="" class="mq-icon mq-drop-icon blue500" style="width: 22px; height: 22px">
+              <use xlink:href="#arrow-down"></use>
+            </svg>
+          </div>
+          <!---->
+        </li>
+        <li data-v-9a478542="" data-v-0fd287b0="" class="mq-shelf-item">
+          <div data-v-9a478542="">
+            <a data-v-9a478542="" href="/bogota/super-ahorro/sazonadores-salsas-sopas" class="mq-shelf-link"><img
+                data-v-6128a5eb="" data-v-9a478542=""
+                src="https://d50xhnwqnrbqk.cloudfront.net/stores/images/app/af941af6f9592ee7c34556156e964b9a.jpg"
+                class="mq-img mq-logo-country v-lazy-image v-lazy-image-loaded" alt="Flag of country" />
+              <p data-v-9a478542="" class="mq-shelf-title">
+                Sazonadores Salsas Sopas
+              </p>
+            </a>
+          </div>
+          <div data-v-9a478542="" class="mq-shelf-drop c-pointer">
+            <svg data-v-9a478542="" class="mq-icon mq-drop-icon blue500" style="width: 22px; height: 22px">
+              <use xlink:href="#arrow-down"></use>
+            </svg>
+          </div>
+          <!---->
+        </li>
+        <li data-v-9a478542="" data-v-0fd287b0="" class="mq-shelf-item">
+          <div data-v-9a478542="">
+            <a data-v-9a478542="" href="/bogota/super-ahorro/congelados" class="mq-shelf-link"><img data-v-6128a5eb=""
+                data-v-9a478542=""
+                src="https://d50xhnwqnrbqk.cloudfront.net/stores/images/app/310a507a99c6087d411f1b25a847ef0f.jpg"
+                class="mq-img mq-logo-country v-lazy-image v-lazy-image-loaded" alt="Flag of country" />
+              <p data-v-9a478542="" class="mq-shelf-title">Congelados</p>
+            </a>
+          </div>
+          <div data-v-9a478542="" class="mq-shelf-drop c-pointer">
+            <svg data-v-9a478542="" class="mq-icon mq-drop-icon blue500" style="width: 22px; height: 22px">
+              <use xlink:href="#arrow-down"></use>
+            </svg>
+          </div>
+          <!---->
+        </li>
+        <li data-v-9a478542="" data-v-0fd287b0="" class="mq-shelf-item">
+          <div data-v-9a478542="">
+            <a data-v-9a478542="" href="/bogota/super-ahorro/cuidado-de-la-ropa" class="mq-shelf-link"><img
+                data-v-6128a5eb="" data-v-9a478542=""
+                src="https://d50xhnwqnrbqk.cloudfront.net/stores/images/app/a4a17c79764504e5e3f69172afda595c.jpg"
+                class="mq-img mq-logo-country v-lazy-image v-lazy-image-loaded" alt="Flag of country" />
+              <p data-v-9a478542="" class="mq-shelf-title">
+                Cuidado de la Ropa
+              </p>
+            </a>
+          </div>
+          <div data-v-9a478542="" class="mq-shelf-drop c-pointer">
+            <svg data-v-9a478542="" class="mq-icon mq-drop-icon blue500" style="width: 22px; height: 22px">
+              <use xlink:href="#arrow-down"></use>
+            </svg>
+          </div>
+          <!---->
+        </li>
+        <li data-v-9a478542="" data-v-0fd287b0="" class="mq-shelf-item">
+          <div data-v-9a478542="">
+            <a data-v-9a478542="" href="/bogota/super-ahorro/aseo-del-hogar" class="mq-shelf-link"><img
+                data-v-6128a5eb="" data-v-9a478542=""
+                src="https://d50xhnwqnrbqk.cloudfront.net/stores/images/app/2ef5f339e525ff789f5a6c3bc6b06725.jpg"
+                class="mq-img mq-logo-country v-lazy-image v-lazy-image-loaded" alt="Flag of country" />
+              <p data-v-9a478542="" class="mq-shelf-title">
+                Aseo del Hogar
+              </p>
+            </a>
+          </div>
+          <div data-v-9a478542="" class="mq-shelf-drop c-pointer">
+            <svg data-v-9a478542="" class="mq-icon mq-drop-icon blue500" style="width: 22px; height: 22px">
+              <use xlink:href="#arrow-down"></use>
+            </svg>
+          </div>
+          <!---->
+        </li>
+        <li data-v-9a478542="" data-v-0fd287b0="" class="mq-shelf-item">
+          <div data-v-9a478542="">
+            <a data-v-9a478542="" href="/bogota/super-ahorro/cuidado-personal" class="mq-shelf-link"><img
+                data-v-6128a5eb="" data-v-9a478542=""
+                src="https://d50xhnwqnrbqk.cloudfront.net/stores/images/app/ef058639de07b31ae7dc20fef973e2ee.jpg"
+                class="mq-img mq-logo-country v-lazy-image v-lazy-image-loaded" alt="Flag of country" />
+              <p data-v-9a478542="" class="mq-shelf-title">
+                Cuidado Personal
+              </p>
+            </a>
+          </div>
+          <div data-v-9a478542="" class="mq-shelf-drop c-pointer">
+            <svg data-v-9a478542="" class="mq-icon mq-drop-icon blue500" style="width: 22px; height: 22px">
+              <use xlink:href="#arrow-down"></use>
+            </svg>
+          </div>
+          <!---->
+        </li>
+        <li data-v-9a478542="" data-v-0fd287b0="" class="mq-shelf-item">
+          <div data-v-9a478542="">
+            <a data-v-9a478542="" href="/bogota/super-ahorro/bebes" class="mq-shelf-link"><img data-v-6128a5eb=""
+                data-v-9a478542=""
+                src="https://d50xhnwqnrbqk.cloudfront.net/stores/images/app/3882564cd256de9bcc153915b5be063a.png"
+                class="mq-img mq-logo-country v-lazy-image v-lazy-image-loaded" alt="Flag of country" />
+              <p data-v-9a478542="" class="mq-shelf-title">Bebés</p>
+            </a>
+          </div>
+          <div data-v-9a478542="" class="mq-shelf-drop c-pointer">
+            <svg data-v-9a478542="" class="mq-icon mq-drop-icon blue500" style="width: 22px; height: 22px">
+              <use xlink:href="#arrow-down"></use>
+            </svg>
+          </div>
+          <!---->
+        </li>
+        <li data-v-9a478542="" data-v-0fd287b0="" class="mq-shelf-item">
+          <div data-v-9a478542="">
+            <a data-v-9a478542="" href="/bogota/super-ahorro/saludables" class="mq-shelf-link"><img data-v-6128a5eb=""
+                data-v-9a478542=""
+                src="https://d50xhnwqnrbqk.cloudfront.net/stores/images/app/084dbc744ecf04f3e24fb7a70a00476f.png"
+                class="mq-img mq-logo-country v-lazy-image v-lazy-image-loaded" alt="Flag of country" />
+              <p data-v-9a478542="" class="mq-shelf-title">Saludables</p>
+            </a>
+          </div>
+          <div data-v-9a478542="" class="mq-shelf-drop c-pointer">
+            <svg data-v-9a478542="" class="mq-icon mq-drop-icon blue500" style="width: 22px; height: 22px">
+              <use xlink:href="#arrow-down"></use>
+            </svg>
+          </div>
+          <!---->
+        </li>
+        <li data-v-9a478542="" data-v-0fd287b0="" class="mq-shelf-item">
+          <div data-v-9a478542="">
+            <a data-v-9a478542="" href="/bogota/super-ahorro/cafe-te-y-chocolate" class="mq-shelf-link"><img
+                data-v-6128a5eb="" data-v-9a478542=""
+                src="https://d50xhnwqnrbqk.cloudfront.net/stores/images/app/ebba9b88f11237fee7157ad44a9ba0f7.jpg"
+                class="mq-img mq-logo-country v-lazy-image v-lazy-image-loaded" alt="Flag of country" />
+              <p data-v-9a478542="" class="mq-shelf-title">
+                Café, Té y Chocolate
+              </p>
+            </a>
+          </div>
+          <div data-v-9a478542="" class="mq-shelf-drop c-pointer">
+            <svg data-v-9a478542="" class="mq-icon mq-drop-icon blue500" style="width: 22px; height: 22px">
+              <use xlink:href="#arrow-down"></use>
+            </svg>
+          </div>
+          <!---->
+        </li>
+        <li data-v-9a478542="" data-v-0fd287b0="" class="mq-shelf-item">
+          <div data-v-9a478542="">
+            <a data-v-9a478542="" href="/bogota/super-ahorro/pan-arepas-y-galletas" class="mq-shelf-link"><img
+                data-v-6128a5eb="" data-v-9a478542=""
+                src="https://d50xhnwqnrbqk.cloudfront.net/stores/images/app/aac9209c1d33a18a79104ba14d5c4ec7.jpg"
+                class="mq-img mq-logo-country v-lazy-image v-lazy-image-loaded" alt="Flag of country" />
+              <p data-v-9a478542="" class="mq-shelf-title">
+                Pan, Arepas y Galletas
+              </p>
+            </a>
+          </div>
+          <div data-v-9a478542="" class="mq-shelf-drop c-pointer">
+            <svg data-v-9a478542="" class="mq-icon mq-drop-icon blue500" style="width: 22px; height: 22px">
+              <use xlink:href="#arrow-down"></use>
+            </svg>
+          </div>
+          <!---->
+        </li>
+        <li data-v-9a478542="" data-v-0fd287b0="" class="mq-shelf-item">
+          <div data-v-9a478542="">
+            <a data-v-9a478542="" href="/bogota/super-ahorro/pasabocas-y-mecato" class="mq-shelf-link"><img
+                data-v-6128a5eb="" data-v-9a478542=""
+                src="https://d50xhnwqnrbqk.cloudfront.net/stores/images/app/6ae92478cc1abb8986dc9d6ed3db2561.jpg"
+                class="mq-img mq-logo-country v-lazy-image v-lazy-image-loaded" alt="Flag of country" />
+              <p data-v-9a478542="" class="mq-shelf-title">
+                Pasabocas y Mecato
+              </p>
+            </a>
+          </div>
+          <div data-v-9a478542="" class="mq-shelf-drop c-pointer">
+            <svg data-v-9a478542="" class="mq-icon mq-drop-icon blue500" style="width: 22px; height: 22px">
+              <use xlink:href="#arrow-down"></use>
+            </svg>
+          </div>
+          <!---->
+        </li>
+        <li data-v-9a478542="" data-v-0fd287b0="" class="mq-shelf-item">
+          <div data-v-9a478542="">
+            <a data-v-9a478542="" href="/bogota/super-ahorro/tortas-y-dulces" class="mq-shelf-link"><img
+                data-v-6128a5eb="" data-v-9a478542=""
+                src="https://d50xhnwqnrbqk.cloudfront.net/stores/images/app/9a6b61b853f268ad6544d83d50531dc7.jpg"
+                class="mq-img mq-logo-country v-lazy-image v-lazy-image-loaded" alt="Flag of country" />
+              <p data-v-9a478542="" class="mq-shelf-title">
+                Tortas y Dulces
+              </p>
+            </a>
+          </div>
+          <div data-v-9a478542="" class="mq-shelf-drop c-pointer">
+            <svg data-v-9a478542="" class="mq-icon mq-drop-icon blue500" style="width: 22px; height: 22px">
+              <use xlink:href="#arrow-down"></use>
+            </svg>
+          </div>
+          <!---->
+        </li>
+        <li data-v-9a478542="" data-v-0fd287b0="" class="mq-shelf-item">
+          <div data-v-9a478542="">
+            <a data-v-9a478542="" href="/bogota/super-ahorro/bebidas" class="mq-shelf-link"><img data-v-6128a5eb=""
+                data-v-9a478542=""
+                src="https://d50xhnwqnrbqk.cloudfront.net/stores/images/app/700084f5add9e5e9490b3430bed7d1c0.jpg"
+                class="mq-img mq-logo-country v-lazy-image v-lazy-image-loaded" alt="Flag of country" />
+              <p data-v-9a478542="" class="mq-shelf-title">Bebidas</p>
+            </a>
+          </div>
+          <div data-v-9a478542="" class="mq-shelf-drop c-pointer">
+            <svg data-v-9a478542="" class="mq-icon mq-drop-icon blue500" style="width: 22px; height: 22px">
+              <use xlink:href="#arrow-down"></use>
+            </svg>
+          </div>
+          <!---->
+        </li>
+        <li data-v-9a478542="" data-v-0fd287b0="" class="mq-shelf-item">
+          <div data-v-9a478542="">
+            <a data-v-9a478542="" href="/bogota/super-ahorro/mascotas" class="mq-shelf-link"><img data-v-6128a5eb=""
+                data-v-9a478542=""
+                src="https://d50xhnwqnrbqk.cloudfront.net/stores/images/app/3d83c1a7bf0505980f93291300536ff4.jpg"
+                class="mq-img mq-logo-country v-lazy-image v-lazy-image-loaded" alt="Flag of country" />
+              <p data-v-9a478542="" class="mq-shelf-title">Mascotas</p>
+            </a>
+          </div>
+          <div data-v-9a478542="" class="mq-shelf-drop c-pointer">
+            <svg data-v-9a478542="" class="mq-icon mq-drop-icon blue500" style="width: 22px; height: 22px">
+              <use xlink:href="#arrow-down"></use>
+            </svg>
+          </div>
+          <!---->
+        </li>
+        <li data-v-9a478542="" data-v-0fd287b0="" class="mq-shelf-item">
+          <div data-v-9a478542="">
+            <a data-v-9a478542="" href="/bogota/super-ahorro/licores" class="mq-shelf-link"><img data-v-6128a5eb=""
+                data-v-9a478542=""
+                src="https://d50xhnwqnrbqk.cloudfront.net/stores/images/app/69e70bfd5906b890af62080e3f4428a7.png"
+                class="mq-img mq-logo-country v-lazy-image v-lazy-image-loaded" alt="Flag of country" />
+              <p data-v-9a478542="" class="mq-shelf-title">Licores</p>
+            </a>
+          </div>
+          <div data-v-9a478542="" class="mq-shelf-drop c-pointer">
+            <svg data-v-9a478542="" class="mq-icon mq-drop-icon blue500" style="width: 22px; height: 22px">
+              <use xlink:href="#arrow-down"></use>
+            </svg>
+          </div>
+          <!---->
+        </li>
+        <li data-v-9a478542="" data-v-0fd287b0="" class="mq-shelf-item">
+          <div data-v-9a478542="">
+            <a data-v-9a478542="" href="/bogota/super-ahorro/hogar" class="mq-shelf-link"><img data-v-6128a5eb=""
+                data-v-9a478542=""
+                src="https://d50xhnwqnrbqk.cloudfront.net/stores/images/app/c0a6757745189dadfda71c9622586805.png"
+                class="mq-img mq-logo-country v-lazy-image v-lazy-image-loaded" alt="Flag of country" />
+              <p data-v-9a478542="" class="mq-shelf-title">Hogar</p>
+            </a>
+          </div>
+          <div data-v-9a478542="" class="mq-shelf-drop c-pointer">
+            <svg data-v-9a478542="" class="mq-icon mq-drop-icon blue500" style="width: 22px; height: 22px">
+              <use xlink:href="#arrow-down"></use>
+            </svg>
+          </div>
+          <!---->
+        </li>
+        <li data-v-9a478542="" data-v-0fd287b0="" class="mq-shelf-item">
+          <div data-v-9a478542="">
+            <a data-v-9a478542="" href="/bogota/super-ahorro/drogueria" class="mq-shelf-link"><img data-v-6128a5eb=""
+                data-v-9a478542=""
+                src="https://d50xhnwqnrbqk.cloudfront.net/stores/images/app/242a970a67a713c8d3ee3e03c5dcf82c.jpg"
+                class="mq-img mq-logo-country v-lazy-image v-lazy-image-loaded" alt="Flag of country" />
+              <p data-v-9a478542="" class="mq-shelf-title">Droguería</p>
+            </a>
+          </div>
+          <div data-v-9a478542="" class="mq-shelf-drop c-pointer">
+            <svg data-v-9a478542="" class="mq-icon mq-drop-icon blue500" style="width: 22px; height: 22px">
+              <use xlink:href="#arrow-down"></use>
+            </svg>
+          </div>
+          <!---->
+        </li>
+      </ul>
+    </nav>
+  </aside>
+  <main id="app" class="mainproductos">
+    <div v-for="departamento in departamentos" class="tituloseccion">
+      <div class="tituloseccion d-flex justify-content-between mt-3">
+        <span>{{departamento}}</span>
+        <span>Ver mas </span>
+      </div>
+      <!-- contenedor de cards -->
+      <div class="contenedorcards mt-2 d-flex align-items-center flex-wrap p-2">
+        <!-- -----card------------- -->
+        <div v-for="producto in productos">
+          <div v-show="producto.departamento === departamento " class="cardproduct m-lg-1">
+            <div class="contenedorimg">
+              <img class="imgcard" :src="producto.urlImg " alt="" style="height: 100" style="width: 100" />
+            </div>
+            <div class="contenedorsubt">
+              <section>
+                <div></div>
+                <p class="titulocard d-flex align-items-center justify-content-center text-center">
+                  {{producto.nombre}}
+                </p>
+                <p id="subtitle" class="medida text-center">
+                  {{producto.medida}}g
+                </p>
+                <div></div>
+                <div class="d-flex mb-2 flex-column justify-content-between align-items-lg-center">
+                  <div class="contenedorprecio d-flex">
+                    <p class="precio mt-4">
+                     $ {{ new Intl.NumberFormat('en-IN', { maximumSignificantDigits: 3 }).format(producto.precio)}}
+                    </p>
+                  </div>
+                  <div>
+                    <p class="preciog m-0">
+                      Gramo a $  {{ new Intl.NumberFormat('en-IN', { maximumSignificantDigits: 3 }).format(producto.precio/producto.medida)}}
+                  </div>
+                </div>
+                <div class="cboton d-flex justify-content-center">
+                  <button class="carboton">
+                    <p id="botagregar">Agregar al carrito</p>
+                  </button>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+<nav id="navphone">
+
+</nav>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://unpkg.com/vue@3"></script>
+  <script src="./assets/js/index.js"></script>
+</body>
+
+</html>

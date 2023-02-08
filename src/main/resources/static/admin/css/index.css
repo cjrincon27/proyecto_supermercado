@@ -371,7 +371,13 @@ main{
     background-color: transparent;
     border: transparent;
 }
+.horizontal-scrollable > .rowww {
+   
+}
+.horizontal-scrollable > .rowww > .carta {
 
+   
+}
 /* ------------media------------------------------ */
 
 @media screen and (max-width:429px){
