@@ -578,9 +578,12 @@
                       Gramo a $  {{ new Intl.NumberFormat('en-IN', { maximumSignificantDigits: 3 }).format(producto.precio/producto.medida)}}
                   </div>
                 </div>
-                <div class="cboton d-flex justify-content-center">
-                  <button class="carboton">
-                    <p id="botagregar">Agregar al carrito</p>
+                <div class="cboton d-flex justify-content-between gap-1 ">
+                  <button  class="carboton editar">
+                    <p  id="botagregar">Editar</p>
+                  </button>
+                  <button  class="carboton eliminar">
+                    <p  id="botagregar">Eliminar</p>
                   </button>
                 </div>
               </section>

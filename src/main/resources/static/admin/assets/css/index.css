@@ -371,13 +371,7 @@ main{
     background-color: transparent;
     border: transparent;
 }
-.horizontal-scrollable > .rowww {
-   
-}
-.horizontal-scrollable > .rowww > .carta {
 
-   
-}
 /* ------------media------------------------------ */
 
 @media screen and (max-width:429px){
@@ -502,3 +496,11 @@ display: none !important;
 
   }
 
+.editar{
+background-color: #0071ed;
+border: 0px;
+}
+.eliminar{
+    background-color: red;
+    border: 0px;
+}
